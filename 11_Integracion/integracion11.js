@@ -44,8 +44,52 @@ console.log(edadIgual18(edades));
 
 // Obtener el menor.
 
+function menor(array){
+    let aMenor = array[0];
+    for(let i = 0; i < array.length; i++){
+        if(array[i] < aMenor){
+            aMenor = array[i]
+        }
+    }
+    return [aMenor];
+}
 
+console.log(menor(edades));
 
-// Obtener el mayor. 
+// Obtener el mayor.
+
+function mayor(array){
+    let aMayor = array[0];
+    for(let i = 0; i < array.length; i++){
+        if(array[i] > aMayor){
+            aMayor = array[i]
+        }
+    }
+    return [aMayor];
+}
+
+console.log(mayor(edades));
+
 // Obtener el promedio de edades.
+
+function promedio(array){
+    let suma = 0
+    for(let i = 0; i < array.length; i++){
+        suma += array[i]
+    }
+    return [suma / array.length]
+}
+
+console.log(promedio(edades));
+
 // Incrementar en 1 todas las edades.
+
+function masUno(array){
+    let arrayMasUno = []
+    for(let i = 0; i < array.length; i++){
+        arrayMasUno.push(array[i]+1)
+    }
+    return arrayMasUno
+}
+
+console.log(masUno(edades));
