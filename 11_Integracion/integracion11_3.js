@@ -19,11 +19,11 @@ console.log(encontrarMultiplos(5,50)); */
 
 /* 
 Punto 2: Arreglos y Objetos
-Crea un arreglo de 4 objetos, cada objeto representa un estudiante con propiedades como nombre,
-notas (arreglo de números) y aprobado (booleano).
+Crea un arreglo de 4 objetos, cada objeto representa un estudiante con propiedades
+como nombre, notas (arreglo de números) y aprobado (booleano).
 
-Agrega un método al objeto para calcular si el estudiante aprobó o no, considerando que aprueba
-si su promedio de notas es mayor o igual a 70.
+Agrega un método al objeto para calcular si el estudiante aprobó o no, considerando
+que aprueba si su promedio de notas es mayor o igual a 70.
 */
 // Crear arreglo de objetos estudiantes
 
@@ -43,18 +43,28 @@ let datosEstudiantes =[
                 return false
             }
         }
-    }
+    },
 ]
 
 console.log(datosEstudiantes[0].aprobado());
 
 // Función para calcular el promedio de notas
 
+function calcularPromedio(array){
+    let suma = 0
+    for(let i = 0; i < array.length; i++){
+        suma += array[i].notas[i]
+    }
+    return suma / array.length
+}
+
+console.log(calcularPromedio(datosEstudiantes))
+
 // Función para determinar si el estudiante aprobó
 
-// Calcular si los estudiantes aprobaron o no (sin funcion)
+// Calcular si los estudiantes aprobaron o no (sin función)
 
-// Imprimir estado de aprobación de los estudiantes (sin funcion)
+// Imprimir estado de aprobación de los estudiantes (sin función)
 
 /* 
 Punto 3: Arreglos y Bucles
