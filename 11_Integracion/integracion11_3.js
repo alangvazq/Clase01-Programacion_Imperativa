@@ -62,6 +62,16 @@ console.log(calcularPromedio(datosEstudiantes))
 
 // Función para determinar si el estudiante aprobó
 
+function aproboAlumno(array){
+    let suma = 0
+    for(let i = 0; i < array.length; i++){
+        suma += array[i].notas[i]
+    }
+    return suma/array.length
+}
+
+aproboAlumno(datosEstudiantes)
+
 // Calcular si los estudiantes aprobaron o no (sin función)
 
 // Imprimir estado de aprobación de los estudiantes (sin función)
