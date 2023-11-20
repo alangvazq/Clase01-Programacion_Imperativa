@@ -74,7 +74,11 @@ aproboAlumno(datosEstudiantes)
 
 // Calcular si los estudiantes aprobaron o no (sin función)
 
+
+
 // Imprimir estado de aprobación de los estudiantes (sin función)
+
+console.log(datosEstudiantes[0].aprobado())
 
 /* 
 Punto 3: Arreglos y Bucles
