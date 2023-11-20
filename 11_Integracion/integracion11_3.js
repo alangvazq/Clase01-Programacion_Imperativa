@@ -44,21 +44,41 @@ let datosEstudiantes =[
             }
         }
     },
+    {
+        nombre: 'pato',
+        notas:[8,8,8],
+        aprobado: function(){
+            let suma = 0
+            for(let i = 0; i < this.notas.length; i++){
+                suma += this.notas[i]
+            }
+
+            if((suma/this.notas.length) > 7){
+                return true
+            }else{
+                return false
+            }
+        }
+    },
 ]
 
 console.log(datosEstudiantes[0].aprobado());
 
 // Función para calcular el promedio de notas
 
-function calcularPromedio(array){
+let nombre = 'pato'
+
+function calcularPromedio(array, nombre){
     let suma = 0
     for(let i = 0; i < array.length; i++){
-        suma += array[i].notas[i]
+        if(nombre == array[i].nombre){
+            suma += array[i].notas[i]
+        }
     }
     return suma / array.length
 }
 
-console.log(calcularPromedio(datosEstudiantes))
+console.log(calcularPromedio(datosEstudiantes, nombre))
 
 // Función para determinar si el estudiante aprobó
 
