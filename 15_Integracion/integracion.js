@@ -101,7 +101,7 @@ let matriz = [
 ];
 
 /*1.- Crear una función que reciba la matriz por parámetro, sume todos los valores de la fila 1
-y retorne la suma.*/
+y retorne la suma.*/ /*Se pide la fila no el index*/
 
 function sumaFila1(matriz){
     let suma = 0;
